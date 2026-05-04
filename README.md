@@ -4,8 +4,10 @@ Drone audio classification using MFCC (mel-frequency cepstral coefficients). `dr
 
 ## Results
 
+`drone_classification.py` achieves 66.7% accuracy:
 ![](drone_results/20260504_222017_test_confusion_matrix_comparison.png)
 
+`model_classification.py` achieves 51.4% accuracy:
 ![](model_results/20260504_225151_rf_test_confusion_matrix_comparison.png)
 
 ## Setup
