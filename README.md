@@ -1,5 +1,9 @@
 # drone-mfcc-detection
 
+<p align="justify">
+Drone audio classification using MFCC (mel-frequency cepstral coefficients). There are two scripts, <code>drone_classification.py</code> classifies audio as drone, helicopter, or background noise, and <code>model_classification.py</code> identifies the specific drone model across 17 classes. Both use PCA (principal component analysis, a technique for reducing the number of features while retaining the most useful information) for dimensionality reduction; <code>drone_classification.py</code> uses logistic regression, while <code>model_classification.py</code> compares logistic regression and random forest, selecting the more accurate of the two. <code>drone_classification.py</code> is trained on a dataset of 90 recordings, 30 in each category; half were used for training, and half for testing. <code>model_classification.py</code> is trained on a dataset of 1513 recordings, 748 (44 for each of the 17 models) for training and 765 (45 for each of the 17 models) for testing.
+</p>
+
 Drone audio classification using MFCC (mel-frequency cepstral coefficients). There are two scripts, `drone_classification.py` classifies audio as drone, helicopter, or background noise, and `model_classification.py` identifies the specific drone model across 17 classes. Both use PCA (principal component analysis, a technique for reducing the number of features while retaining the most useful information) for dimensionality reduction; `drone_classification.py` uses logistic regression, while `model_classification.py` compares logistic regression and random forest, selecting the more accurate of the two. `drone_classification.py` is trained on a dataset of 90 recordings, 30 in each category; half were used for training, and half for testing. `model_classification.py` is trained on a dataset of 1513 recordings, 748 (44 for each of the 17 models) for training and 765 (45 for each of the 17 models) for testing.
 
 ## Results
