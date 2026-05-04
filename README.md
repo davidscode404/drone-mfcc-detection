@@ -26,6 +26,11 @@ Install requirements:
 
 ## Run
 
+`cd` into the `main` directory:
+> ```sh
+> $ cd main
+> ```
+
 Run `drone_classification.py`:
 > ```sh
 > $ python3 drone_classification.py
