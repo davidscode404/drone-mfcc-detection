@@ -1,5 +1,7 @@
 # drone-mfcc-detection
 
+## Results
+
 ## Setup
 
 Be sure to use a virtual environment:
@@ -20,7 +22,13 @@ Install requirements:
 > $ pip install -r requirements.txt
 > ```
 
-Create .env:
+## Run
+
+Run `classification.py`:
 > ```sh
-> $ touch .env
+> $ python3 classification.py
 > ```
+
+Six `png`s will be saved to results:
+
+Note that each `png` is prefaced with a timestamp (e.g. `20260504_143022_`).
