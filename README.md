@@ -24,7 +24,7 @@ Install requirements:
 > $ pip install -r requirements.txt
 > ```
 
-## Run
+## Classify drones:
 
 `cd` into the `main` directory:
 > ```sh
@@ -45,3 +45,15 @@ Six `png` filess will be saved to the results folder:
 - `_test_confusion_matrix_comparison.png` — side-by-side of the above two, test data.
 
 Note that each `png` is prefaced with a timestamp (e.g. `20260504_143022_`).
+
+## Classify drone models:
+
+`cd` into the `main` directory:
+> ```sh
+> $ cd main
+> ```
+
+Run `model_classification.py`:
+> ```sh
+> $ python3 model_classification.py
+> ```
