@@ -1,5 +1,7 @@
 # drone-mfcc-detection
 
+Drone classification using MFCC ("mel-frequency cepstral coefficients"). `drone_classification.py` differentiates drones from helicopters and noise, and `model_classification.py` differentiates different drone models.
+
 ## Results
 
 ## Setup
@@ -24,9 +26,9 @@ Install requirements:
 
 ## Run
 
-Run `classification.py`:
+Run `drone_classification.py`:
 > ```sh
-> $ python3 classification.py
+> $ python3 drone_classification.py
 > ```
 
 Six `png` filess will be saved to the results folder:

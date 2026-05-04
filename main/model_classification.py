@@ -495,7 +495,7 @@ if __name__ == '__main__':
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     
     # Create output directory for saving plots if it doesn't exist
-    output_dir = os.path.join(ROOT_DIR, "results")
+    output_dir = os.path.join(ROOT_DIR, "model_results")
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         print(f"Created output directory: {output_dir}")

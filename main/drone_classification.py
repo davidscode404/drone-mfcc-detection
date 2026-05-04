@@ -352,7 +352,7 @@ if __name__ == '__main__':
     print(f"\nSummary: {misclassified_count} out of {len(y_test)} files misclassified ({misclassified_count/len(y_test)*100:.1f}%)")
 
     # Create output directory for saving plots if it doesn't exist
-    output_dir = os.path.join(ROOT_DIR, "results")
+    output_dir = os.path.join(ROOT_DIR, "drone_results")
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
         print(f"Created output directory: {output_dir}")
