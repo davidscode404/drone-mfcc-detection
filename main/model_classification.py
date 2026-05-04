@@ -37,7 +37,7 @@ DRONE_MODELS = [
 ]
 
 # Define data paths
-fs = 16000  # 16kHz sampling rate
+fs = 44100
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Base directories for train and test sets
