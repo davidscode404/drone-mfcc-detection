@@ -1,6 +1,6 @@
 # drone-mfcc-detection
 
-Drone classification using MFCC ("mel-frequency cepstral coefficients"). `drone_classification.py` differentiates drones from helicopters and noise, and `model_classification.py` differentiates different drone models.
+Drone audio classification using MFCC (mel-frequency cepstral coefficients). `drone_classification.py` classifies audio as drone, helicopter, or background noise. `model_classification.py` identifies the specific drone model across 17 classes. Both use PCA (principal component analysis, a technique for reducing the number of features while retaining the most useful information) for dimensionality reduction; `drone_classification.py` uses logistic regression, while `model_classification.py` compares logistic regression and random forest, selecting the more accurate of the two.
 
 ## Results
 
@@ -61,3 +61,12 @@ Run `model_classification.py`:
 > ```sh
 > $ python3 model_classification.py
 > ```
+
+`_{lr/rf}_train_confusion_matrix_normalized.png` — training data, proportions
+`_{lr/rf}_train_confusion_matrix_counts.png` — training data, raw counts
+`_{lr/rf}_train_confusion_matrix_comparison.png` — training data, side-by-side
+`_{lr/rf}_test_confusion_matrix_normalized.png` — test data, proportions
+`_{lr/rf}_test_confusion_matrix_counts.png` — test data, raw counts
+`_{lr/rf}_test_confusion_matrix_comparison.png` — test data, side-by-side
+
+Note that each `png` is prefaced with a timestamp (e.g. `20260504_143022_`), and either `lr_` (logistic regression) or `rf_` (random forest), depending on which classifier won on test accuracy.
