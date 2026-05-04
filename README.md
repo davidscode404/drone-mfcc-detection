@@ -62,11 +62,11 @@ Run `model_classification.py`:
 > $ python3 model_classification.py
 > ```
 
-`_{lr/rf}_train_confusion_matrix_normalized.png` — training data, proportions
-`_{lr/rf}_train_confusion_matrix_counts.png` — training data, raw counts
-`_{lr/rf}_train_confusion_matrix_comparison.png` — training data, side-by-side
-`_{lr/rf}_test_confusion_matrix_normalized.png` — test data, proportions
-`_{lr/rf}_test_confusion_matrix_counts.png` — test data, raw counts
-`_{lr/rf}_test_confusion_matrix_comparison.png` — test data, side-by-side
+- `_{lr/rf}_train_confusion_matrix_normalized.png` — training data, proportions
+- `_{lr/rf}_train_confusion_matrix_counts.png` — training data, raw counts
+- `_{lr/rf}_train_confusion_matrix_comparison.png` — training data, side-by-side
+- `_{lr/rf}_test_confusion_matrix_normalized.png` — test data, proportions
+- `_{lr/rf}_test_confusion_matrix_counts.png` — test data, raw counts
+- `_{lr/rf}_test_confusion_matrix_comparison.png` — test data, side-by-side
 
 Note that each `png` is prefaced with a timestamp (e.g. `20260504_143022_`), and either `lr_` (logistic regression) or `rf_` (random forest), depending on which classifier won on test accuracy.
