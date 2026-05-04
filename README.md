@@ -40,7 +40,7 @@ Run `drone_classification.py`:
 > $ python3 drone_classification.py
 > ```
 
-Six `png` filess will be saved to the results folder:
+Six `png` filess will be saved to the drone_results folder:
 - `_train_confusion_matrix_normalized.png` — single heatmap, training data, values as proportions (0.0–1.0).
 - `_train_confusion_matrix_counts.png` — single heatmap, training data, values as raw file counts.
 - `_train_confusion_matrix_comparison.png` — side-by-side of the above two, training data.
@@ -62,6 +62,7 @@ Run `model_classification.py`:
 > $ python3 model_classification.py
 > ```
 
+Six `png` filess will be saved to the model_results folder:
 - `_{lr/rf}_train_confusion_matrix_normalized.png` — training data, proportions
 - `_{lr/rf}_train_confusion_matrix_counts.png` — training data, raw counts
 - `_{lr/rf}_train_confusion_matrix_comparison.png` — training data, side-by-side
